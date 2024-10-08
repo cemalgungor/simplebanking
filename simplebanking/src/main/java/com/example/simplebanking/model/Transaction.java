@@ -2,7 +2,7 @@ package com.example.simplebanking.model;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-@Entity
+@MappedSuperclass
 @Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 @DiscriminatorColumn(name = "transaction_type")
 public abstract class Transaction {
