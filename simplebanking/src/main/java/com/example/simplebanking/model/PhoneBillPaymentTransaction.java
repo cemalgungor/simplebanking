@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Entity
-@DiscriminatorValue("PhoneBillPaymentTransaction")
 public class PhoneBillPaymentTransaction extends Transaction {
 
     private String provider;
