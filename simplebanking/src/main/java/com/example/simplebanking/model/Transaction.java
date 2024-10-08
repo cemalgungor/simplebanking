@@ -3,7 +3,6 @@ package com.example.simplebanking.model;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 @Entity
-@MappedSuperclass
 @DiscriminatorColumn(name = "transaction_type")
 public abstract class Transaction {
 
