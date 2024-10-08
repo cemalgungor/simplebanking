@@ -3,7 +3,8 @@ package com.example.simplebanking.model;
 import javax.persistence.*;
 import java.time.LocalDateTime;
 @Entity
-@DiscriminatorColumn(name = "transaction_type")
+@DiscriminatorColumn(name = "transaction_type") 
+@Inheritance(strategy = InheritanceType.SINGLE_TABLE)
 public abstract class Transaction {
 
     @Id
