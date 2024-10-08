@@ -5,8 +5,6 @@ import javax.persistence.Entity;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-@Entity
-@DiscriminatorValue("WITHDRAWAL")
 public class WithdrawalTransaction extends Transaction {
     public WithdrawalTransaction() {
     }
